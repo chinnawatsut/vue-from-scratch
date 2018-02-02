@@ -9,6 +9,27 @@
     <div id="app">
         {{message}}
     </div>
+    <div id="app-2">
+        <span v-bind:title="message">
+            Arobica
+        </span>
+    </div>
+    <div id="app-3">
+        <span v-if="seen">It's show!!!</span>
+    </div>
+    <div id="app-4">
+        <ol>
+            <li v-for="todo in todos">{{todo.text}}</li>
+        </ol>
+    </div>
+    <div id="app-5">
+        {{message}}
+        <button v-on:click="reverseMessage">Reverse Message</button>
+    </div>
+    <div id="app-6">
+        <p>Message:{{message}}</p>
+        <input v-model="message">
+    </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 <script src="app.js"></script>
